@@ -49,6 +49,19 @@ autowrap_mode = 3
 layout_mode = 2
 audio_bus_name = "Music"
 
+[node name="fpsSliderBox" type="VBoxContainer" parent="MarginContainer/AspectRatioContainer/Items/Buttons" index="1"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/AspectRatioContainer/Items/Buttons/fpsSliderBox" index="0"]
+layout_mode = 2
+text = "FPS limit: "
+label_settings = ExtResource("3_t0dhi")
+
+[node name="fpsSlider" parent="MarginContainer/AspectRatioContainer/Items/Buttons/fpsSliderBox" index="1" instance=ExtResource("6_gllis")]
+layout_mode = 2
+script = ExtResource("5_ekn1n")
+slide_name = "FPS limit: "
+
 [node name="FullscreenButton" parent="MarginContainer/AspectRatioContainer/Items/Buttons" index="1" instance=ExtResource("7_t2eu6")]
 unique_name_in_owner = true
 layout_mode = 2
